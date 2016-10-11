@@ -1,0 +1,1 @@
+{"aaData": [{"disk_size": 500.0, "hostname": "lx01", "n_cores": 2, "disk_avail": 250.0, "memory": 4.1, "date": "1970-01-01", "cpu_max_freq": 1.0, "cpu": "CPU type from lscpu"}]} 

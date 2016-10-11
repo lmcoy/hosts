@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Computer</title>
+<style type="text/css" title="currentStyle">
+			@import "demo_page.css";
+			@import "demo_table.css";
+		</style>
+<script type="text/javascript" language="javascript" src="jquery.js"></script>
+<script type="text/javascript" language="javascript" src="jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+				var oTable = $('#example').dataTable( {
+					"bProcessing": true,
+					"sAjaxSource": "hosts.txt",
+					"aoColumns": [
+{"mData": "hostname"}, 
+{"mData": "cpu"},
+{"mData": "n_cores"},
+{"mData": "cpu_max_freq"},
+{"mData": "memory"},
+{"mData": "disk_size"},
+{"mData": "disk_avail"},
+{"mData": "date"}
+]
+				} );
+			} );
+		</script>
+</head>
+<body>
+
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th width="30%">CPU</th>
+			<th>cores</th>
+			<th>max freq [GHz]</th>
+			<th>RAM [GB]</th>
+			<th>disk size [GB]</th>
+			<th>disk avail [GB]</th>
+			<th>last update</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>Name</th>
+			<th>CPU</th>
+			<th>cores</th>
+			<th>max freq [GHz]</th>
+			<th>RAM [GB]</th>
+			<th>disk size [GB]</th>
+			<th>disk avail [GB]</th>
+			<th>last update</th>
+		</tr>
+	</tfoot>
+</table>
+
+</body>
+</html>
